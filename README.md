@@ -1,27 +1,32 @@
 # Graphene Effect on Metals
 
-This repository contains a machine learning project that studies the effect of graphene-related structural features on corrosion behavior, with a focus on corrosion current density (Icorr).
+## Description
 
-## What is included
+This project analyzes how graphene coating features affect corrosion behavior in metals, with a focus on corrosion current density (Icorr). The notebook combines data preparation, regression modeling, evaluation, and visual analysis to compare graphene structural parameters against corrosion response.
+
+## Contents
 
 - `Graphene Effect.ipynb` - the full analysis notebook
 - `graphene_corrosion_final.csv` - the dataset used in the notebook
-- `Endsem_Final_Report.pdf` - the written project report
-- `Effect of Layers.png`, `ID_IG vs Corr.png`, `Prediction.png`, `R2 Score.png` - output figures from the analysis
+- `graphene_layers_vs_corrosion.png` - layer effect visualization
+- `id_ig_vs_corrosion.png` - defect ratio versus corrosion plot
+- `corrosion_prediction.png` - prediction output figure
+- `model_r2_comparison.png` - model performance comparison figure
 
-## Project goal
+## Workflow
 
 The notebook explores how graphene layers, defect ratio (ID/IG), defect density, and wrinkle density relate to corrosion performance. It trains regression models, compares them, and generates prediction and visualization outputs.
 
-## How to run
+## How to Run
 
 1. Open `Graphene Effect.ipynb` in VS Code or Jupyter.
 2. Make sure `graphene_corrosion_final.csv` stays in the same folder as the notebook.
 3. Run the notebook from top to bottom.
 
-The notebook now loads the CSV with a relative path, so it works directly from this repository folder.
+The notebook loads the CSV with a relative path, so it works directly from this repository folder.
 
 ## Notes
 
-- The repository is set up as a single-folder project for easy sharing.
-- If you want a cleaner presentation later, the next step would be to move the analysis into a `/src` or `/notebooks` layout and add a requirements file.
+- The repository is kept as a single-folder project for easy sharing.
+- The report PDF has been removed from the repository to keep the focus on the notebook and figures.
+- If you want a more polished research setup later, the next step would be to split the notebook, data, and figures into dedicated folders and add a requirements file.
